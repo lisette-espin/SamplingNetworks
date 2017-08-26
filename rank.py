@@ -8,7 +8,7 @@ if __name__ == '__main__':
     datafn = sys.argv[1]
     method = sys.argv[2]  # degree, pagerank, percolation
     output = sys.argv[3]
-    name = datafn.split('/')[-1].split('.')[0]
+    name = datafn.split('/')[-1].split('.gpickle')[0]
 
     print(datafn)
     print(method)
@@ -58,7 +58,7 @@ if __name__ == '__main__':
             with open(fn,'wb') as f:
                 pickle.dump(nodes, f)
 
-            print('{} saved!'.format(fn))
+            print('{} nodes | {} saved!'.format(len(nodes), fn))
     else:
         print('nothing to do.')
 
