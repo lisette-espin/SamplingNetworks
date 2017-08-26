@@ -1,5 +1,3 @@
-# coding=utf8
-
 from libs.ranking.nodes.node_ranking import NodeRanking
 import networkx as nx
 import sys
@@ -12,7 +10,9 @@ if __name__ == '__main__':
     output = sys.argv[3]
     name = datafn.split('/')[-1].split('.')[0]
 
+    print(datafn)
     print(method)
+    print(output)
 
     try:
         G = nx.read_gpickle(datafn)
