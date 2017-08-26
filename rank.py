@@ -1,3 +1,5 @@
+# coding=utf8
+
 from libs.ranking.nodes.node_ranking import NodeRanking
 import networkx as nx
 import sys
